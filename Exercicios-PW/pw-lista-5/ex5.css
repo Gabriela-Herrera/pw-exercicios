@@ -1,0 +1,12 @@
+.caixa{
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 3px ridge;
+    width:max-content;
+    border-color: rgb(179, 134, 221);
+}
+body{
+    display: flex;
+    text-align: center;
+}

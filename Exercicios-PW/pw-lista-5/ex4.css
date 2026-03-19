@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    text-align: center;
+    background-color:  rgb(163, 195, 214);
+}
+
+div{
+    padding: 40px;
+    border: 1px solid;
+}
