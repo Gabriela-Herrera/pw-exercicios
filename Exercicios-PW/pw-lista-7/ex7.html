@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Catálogo de Produtos</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background: linear-gradient(555deg, mediumpurple, mediumpurple, mediumpurple) no-repeat center center fixed;
+            background-size: cover;
+        }
+        header{
+            background: black;
+            padding: 40px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #e6e1e1;
+        }
+        h1{
+            font-size: 30px;
+        }
+        .catalogo {
+          padding: 60px 40px;
+          text-align: center;
+        }
+        .produtos {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 40px;
+        }
+
+        .card{
+            margin: 12px;
+            width: 16vw;
+            height: 48vh;
+            min-height: 360px;
+            min-width: 280px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card{
+          padding: 24px;
+          text-align: left;
+
+        }
+        .card img{
+            width: 15vw;
+            height: 30vh;
+            min-width: 250px;
+            min-height: 230px;
+        }
+
+        .card button {
+          background: #007bff;
+          color: white;
+          border: none;
+          border-radius: 10px;
+          padding: 14px 18px;
+          font-size: 17px;
+          cursor: pointer;
+        }
+
+
+
+        }
+    </style>
+    <body>
+        <header class="container">
+            <h1>Catálogo de Produtos</h1>
+        </header>
+        <main class="catalogo">
+            <section class="produtos">
+                <div class="card">
+                    <img
+                        src="https://raw.githubusercontent.com/pw1etec/exercicios-pw/refs/heads/main/pw-lista-7/assets/images/galaxy.png"
+                        alt="Produtos"
+                    />
+                    <h2>Galaxy A06</h2>
+                    <p>Descrição breve do produto.</p>
+                    <span class="preco">R$ 99,90</span>
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img
+                        src="https://raw.githubusercontent.com/pw1etec/exercicios-pw/refs/heads/main/pw-lista-7/assets/images/iphone.png"
+                        alt="Produtos"
+                    />
+                    <h2>iPhone 11</h2>
+                    <p>Descrição breve do produto.</p>
+                    <span class="preco">R$ 99,90</span>
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img
+                        src="https://raw.githubusercontent.com/pw1etec/exercicios-pw/refs/heads/main/pw-lista-7/assets/images/motorola.png"
+                        alt="Produto"
+                    />
+                    <h2>Motorola G05</h2>
+                    <p>Descrição breve do produto.</p>
+                    <span class="preco">R$ 99,90</span>
+                    <button>Comprar</button>
+                </div>
+                <div class="card">
+                    <img
+                        src="https://raw.githubusercontent.com/pw1etec/exercicios-pw/refs/heads/main/pw-lista-7/assets/images/redmi.png"
+                        alt="Produto"
+                    />
+                    <h2>Redmi Note</h2>
+                    <p>Descrição breve do produto.</p>
+                    <span class="preco">R$ 99,90</span>
+                    <button>Comprar</button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
