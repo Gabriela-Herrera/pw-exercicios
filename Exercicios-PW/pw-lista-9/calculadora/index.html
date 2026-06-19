@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#ffff88;
+}
+
+.calculadora{
+    width:320px;
+    background:#222;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+.display{
+    background:#111;
+    color:white;
+    font-size:2rem;
+    text-align:right;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:15px;
+    overflow:hidden;
+}
+
+.botoes{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:10px;
+}
+
+button{
+    height:60px;
+    border:none;
+    border-radius:10px;
+    font-size:1.3rem;
+    cursor:pointer;
+    background:#444;
+    color:white;
+}
+
+button:hover{
+    background:#555;
+}
+
+.operador{
+    background:#ff9500;
+}
+
+.operador:hover{
+    background:#e68a00;
+}
+
+.igual{
+    background:#28a745;
+    grid-column:span 2;
+}
+
+.igual:hover{
+    background:#218838;
+}
+
+.zero{
+    grid-column:span 2;
+}
+</style>
+
+</head>
+<body>
+
+<div class="calculadora">
+
+    <div class="display">0</div>
+
+    <div class="botoes">
+        <button>C</button>
+        <button>CE</button>
+        <button>%</button>
+        <button class="operador">/</button>
+
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operador">x</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operador">-</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operador">+</button>
+
+        <button class="zero">0</button>
+        <button>.</button>
+        <button class="igual">=</button>
+    </div>
+
+</div>
+
+</body>
+</html>
