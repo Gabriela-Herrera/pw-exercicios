@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Craftsy</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #c7f4f9
+          url("https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/bg-2.png?raw=true")
+          repeat;
+      }
+
+      .topbar {
+        background: #f24b1a;
+        border-bottom: 4px solid rgba(0, 0, 0, 0.05);
+      }
+      .topbar-inner {
+        width: 980px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 0;
+      }
+      .logo {
+        height: 36px;
+      }
+
+      .main-nav ul {
+        list-style: none;
+        display: flex;
+        gap: 24px;
+      }
+      .main-nav a {
+        color: #fff;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      .auth-links a {
+        color: #fff;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .sep {
+        color: #f24b1a;
+      }
+
+      .container {
+        width: 980px;
+        margin: 20px auto;
+      }
+
+      .content-wrap {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+      }
+
+      .products {
+        flex: 1;
+      }
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+      }
+
+      .card {
+        background: #fff;
+        border: 1px solid #e8e8e8;
+        padding: 14px;
+      }
+      .card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+      }
+      .card h3 {
+        margin: 10px 0 6px;
+        font-size: 16px;
+      }
+      .card p {
+        font-size: 13px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+      .btn-red {
+        background: #e83b2a;
+        color: #fff;
+        padding: 8px 12px;
+        font-size: 13px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        display: inline-block;
+      }
+
+      .sidebar {
+        width: 260px;
+      }
+      .box {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        padding: 12px;
+        margin-bottom: 18px;
+      }
+      .box h4 {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 6px;
+      }
+      .tutorial-list {
+        list-style: none;
+      }
+      .tutorial-list li {
+        display: flex;
+        gap: 10px;
+        padding: 8px 0;
+        border-bottom: 1px dashed #eee;
+      }
+
+      li a{
+        color: #5e5d5d;
+      }
+      
+      .tutorial-list img {
+        width: 60px;
+        height: 40px;
+        object-fit: cover;
+      }
+
+      .ad {
+        width: 100%;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page-wrap">
+      <header class="topbar">
+        <div class="topbar-inner">
+          <div class="brand">
+            <img
+              src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/logo.png?raw=true"
+              alt="Craftsy"
+              class="logo"
+            />
+          </div>
+
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#">SMARTPHONES</a></li>
+              <li><a href="#">TABLETS</a></li>
+              <li><a href="#">COMPUTADORES</a></li>
+            </ul>
+          </nav>
+
+          <div class="auth-links">
+            <a href="login.html">LOGIN</a>
+            <span class="sep">|</span>
+            <a href="register.html">REGISTRAR</a>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="content-wrap">
+          <section class="products">
+            <div class="product-grid">
+              <article class="card">
+                <img
+                  src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/img-phone-01.jpg?raw=true"
+                  alt="Produto 1"
+                />
+                <h3>Nome do produto</h3>
+                <p class="excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a class="btn-red" href="#">VER MAIS</a>
+              </article>
+
+              <article class="card">
+                <img
+                  src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/img-phone-02.jpg?raw=true"
+                  alt="Produto 2"
+                />
+                <h3>Nome do produto</h3>
+                <p class="excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a class="btn-red" href="#">VER MAIS</a>
+              </article>
+
+              <article class="card">
+                <img
+                  src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/img-phone-03.jpg?raw=true"
+                  alt="Produto 3"
+                />
+                <h3>Nome do produto</h3>
+                <p class="excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a class="btn-red" href="#">VER MAIS</a>
+              </article>
+
+              <article class="card">
+                <img
+                  src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/img-phone-01.jpg?raw=true"
+                  alt="Produto 4"
+                />
+                <h3>Nome do produto</h3>
+                <p class="excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a class="btn-red" href="#">VER MAIS</a>
+              </article>
+
+              <article class="card">
+                <img
+                  src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/img-phone-02.jpg?raw=true"
+                  alt="Produto 5"
+                />
+                <h3>Nome do produto</h3>
+                <p class="excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a class="btn-red" href="#">VER MAIS</a>
+              </article>
+
+              <article class="card">
+                <img
+                  src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/img-phone-03.jpg?raw=true"
+                  alt="Produto 6"
+                />
+                <h3>Nome do produto</h3>
+                <p class="excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a class="btn-red" href="#">VER MAIS</a>
+              </article>
+            </div>
+          </section>
+
+          <aside class="sidebar">
+            <div class="box">
+              <h4>Tutoriais</h4>
+              <ul class="tutorial-list">
+                <li>
+                  <img
+                    src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/aside-01.jpg?raw=true"
+                    alt=""
+                  /><a href="#">Titulo do tutorial de reparo.</a>
+                </li>
+                <li>
+                  <img
+                    src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/aside-02.jpg?raw=true"
+                    alt=""
+                  /><a href="#">Titulo do tutorial de reparo.</a>
+                </li>
+                <li>
+                  <img
+                    src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/aside-03.jpg?raw=true"
+                    alt=""
+                  /><a href="#">Titulo do tutorial de reparo.</a>
+                </li>
+                <li>
+                  <img
+                    src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/aside-04.jpg?raw=true"
+                    alt=""
+                  /><a href="#">Titulo do tutorial de reparo.</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="box">
+              <h4>Publicidade</h4>
+              <a href="#"
+                ><img
+                  class="ad"
+                  src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/ad-01.jpg?raw=true"
+                  alt="Ad 1"
+              /></a>
+              <a href="#"
+                ><img
+                  class="ad"
+                  src="https://github.com/pw1etec/exercicios-pw/blob/main/pw-lista-8/assets/ad-02.jpg?raw=true"
+                  alt="Ad 2"
+              /></a>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
