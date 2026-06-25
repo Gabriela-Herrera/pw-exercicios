@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wardiere Inc.</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  /* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#140824;
+    color:white;
+
+}
+
+/* HEADER */
+
+header{
+
+    width:90%;
+    margin:auto;
+    padding:30px 0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.logo img{
+
+    width:250px;
+
+}
+
+nav{
+
+    display:flex;
+    gap:50px;
+
+}
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+
+}
+
+.signup{
+
+    background:white;
+    color:#18092b;
+
+    border:none;
+
+    padding:15px 28px;
+
+    border-radius:50px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+/* HERO */
+
+.hero{
+
+    width:92%;
+    margin:30px auto;
+
+    background:#2b1260;
+
+    border-radius:25px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    padding:60px;
+
+    gap:40px;
+
+}
+
+.texto{
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+
+}
+
+.tag{
+
+    width:max-content;
+
+    background:#b7a4ff;
+
+    color:#2b1260;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+.texto h1{
+
+    font-size:52px;
+    line-height:1.1;
+
+}
+
+.texto p{
+
+    color:#dddddd;
+    line-height:1.7;
+    max-width:520px;
+
+}
+
+/* BOTÃO */
+
+.cta{
+
+    width:300px;
+    height:70px;
+
+    background:white;
+    color:#2b1260;
+
+    border:none;
+    border-radius:50px;
+
+    font-size:24px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding-left:35px;
+    padding-right:8px;
+
+    cursor:pointer;
+
+    position:relative;
+
+}
+
+.icone{
+
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    background:#21083e;
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* IMAGEM */
+
+.imagem{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+
+}
+
+.imagem img{
+
+    width:100%;
+    max-width:520px;
+
+    border-radius:90px;
+
+    object-fit:cover;
+
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+    gap:30px;
+
+}
+
+nav{
+
+    gap:20px;
+
+}
+
+.hero{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.texto{
+
+    align-items:center;
+
+}
+
+.texto h1{
+
+    font-size:38px;
+
+}
+
+.cta{
+
+    width:280px;
+
+}
+
+}
+
+</style>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="https://raw.githubusercontent.com/pw1etec/exercicios-pw/refs/heads/main/pw-lista-9/land-page/assets/logo.png" alt="Logo">
+      
+    </div>
+
+    <nav>
+        <a href="#">Solutions</a>
+        <a href="#">Pricing</a>
+        <a href="#">About</a>
+    </nav>
+
+    <button class="signup">
+        Sign up
+        <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<div class="texto">
+
+    <span class="tag">
+        #flexiblesolutions
+    </span>
+
+    <h1>
+        Flexible Solutions for Your Business
+    </h1>
+
+    <p>
+        Lorem ipsum praesent ac massa at ligula reet est iaculis.
+        Vivamus est mist aliquet elit ac nisl. Lorem ipsum praesent
+        ac massa at ligula reet est iaculis. Vivamus est mist.
+    </p>
+
+    <button class="cta">
+        Start free today
+        <span class="icone">
+            <i class="fa-solid fa-arrow-right"></i>
+        </span>
+    </button>
+
+</div>
+
+<div class="imagem">
+
+    <img src="https://raw.githubusercontent.com/pw1etec/exercicios-pw/refs/heads/main/pw-lista-9/land-page/assets/banner.png" alt="Banner">
+
+</div>
+
+</section>
+
+</main>
+
+</body>
+</html>
